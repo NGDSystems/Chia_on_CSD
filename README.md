@@ -1,8 +1,6 @@
 # Chia_on_CSD
-## 1- Using CSDs as a Chia plotter
-Chia blockchain recommends SSD as a temp drive which makes plotting faster.
 
-## Chia blockchain Install instructions for Ubuntu/Debian
+## 1- Install instructions for Ubuntu/Debian
 
 ```
 ngd@node1:~$ sudo apt-get update
@@ -15,7 +13,26 @@ ngd@node1:~$ git clone https://github.com/Chia-Network/chia-blockchain.git -b la
 ngd@node1:~$ cd chia-blockchain
 ngd@node1:~/chia-blockchain$ sh install.sh
 ngd@node1:~/chia-blockchain$ . ./activate
-(venv) ngd@node1:~/chia-blockchain$ chia plots create -k 32 -b 5120 -u 128 -r 1 -n 1 -t /media/newport/temp/ -d /media/newport/plots/ -f Farmer_Public_Key -p Pool_Public_Key
+(venv) ngd@node1:~/chia-blockchain$ 
 
 ```
 
+## 2- Using CSDs as a Chia plotter
+Chia blockchain recommends SSD as a temp drive which makes plotting faster.
+
+```
+ngd@node1:~$ cd chia-blockchain
+ngd@node1:~/chia-blockchain$ . ./activate
+(venv) ngd@node1:~/chia-blockchain$ chia plots create -k 32 -b 5120 -u 128 -r 1 -n 1 -t /media/newport/temp/ -d /media/newport/plots/ -f Farmer_Public_Key -p Pool_Public_Key
+
+```
+## 3- Using CSDs as a Chia Harvester
+![image](https://user-images.githubusercontent.com/31414094/152073443-c90b9353-3d1b-41d4-80eb-de39f3186357.png)
+
+
+```
+ngd@node1:~$ cd chia-blockchain
+ngd@node1:~/chia-blockchain$ . ./activate
+(venv) ngd@node1:~/chia-blockchain$ chia plots create -k 32 -b 5120 -u 128 -r 1 -n 1 -t /media/newport/temp/ -d /media/newport/plots/ -f Farmer_Public_Key -p Pool_Public_Key
+
+```
