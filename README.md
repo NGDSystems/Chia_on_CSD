@@ -36,6 +36,21 @@ In the above scenario, we assumed that Full and Farmer nodes are working on the 
 
 We run the following commands on the host server, which its IP address is "10.1.1.1".
 
+1- Make a copy of the host server CA directory into the same path in CSDs.
+```
+scp  -r ~/.chia/mainnet/config/ssl/ca ngd@10.1.1.2:~/.chia/mainnet/config/ssl/catmp
+```
+
+2- Make sure the host server IP address on port 8447 is accessible by CSDs harvester machines.
+```
+sudo ufw allow from 10.1.1.2
+```
+
+3- See list remote harvesters after some minutes. 
+```
+chia farm summary
+```
+
 
 ```
 ngd@node1:~$ cd chia-blockchain
