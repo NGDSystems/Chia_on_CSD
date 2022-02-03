@@ -28,29 +28,30 @@ ngd@node1:~/chia-blockchain$ . ./activate
 ```
 ## 3- Using CSDs as a Chia Harvester
 
-Here is the senario as under: 
+Here is the scenario as under:
 
 ![image](https://user-images.githubusercontent.com/31414094/152264115-0670ecb8-f435-40fd-9ab4-a92d8d7edf53.png)
 
 In the above scenario, we assumed that Full and Farmer nodes are working on the Host, and CSDs are harvesting on their local plots. The architecture comprises one host server that runs the farmer, full node, and wallet and CSDs that run only the harvester. Only the host server will connect to the Chia network.
 
-We run the following commands on the host server, which its IP address is "10.1.1.1".
+### The steps we need to run on the host server are as follows.
 
-1- Make a copy of the host server CA directory into the same path in CSDs.
+a- Make a copy of the host server CA directory into the same path in CSDs.
 ```
 scp  -r ~/.chia/mainnet/config/ssl/ca ngd@10.1.1.2:~/.chia/mainnet/config/ssl/catmp
 ```
 
-2- Make sure the host server IP address on port 8447 is accessible by CSDs harvester machines.
+b- Make sure the host server IP address on port 8447 is accessible by CSDs harvester machines.
 ```
 sudo ufw allow from 10.1.1.2
 ```
 
-3- See list remote harvesters after some minutes. 
+c- See the list of remote harvesters after some minutes. 
 ```
 chia farm summary
 ```
 
+### The steps we need to run on the CSDs are as follows.
 
 ```
 ngd@node1:~$ cd chia-blockchain
