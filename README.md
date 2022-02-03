@@ -73,13 +73,21 @@ harvester:
     port: 8447
 ```
 
+c- Make sure the Host IP address on port 8447 (10.1.1.1:8447) is accessible by the CSDs harvester.
 
-
-
-
+d- Create a new certificate signed by the host machine's CA on each CSDs harvester.
 ```
-ngd@node1:~$ cd chia-blockchain
-ngd@node1:~/chia-blockchain$ . ./activate
-(venv) ngd@node1:~/chia-blockchain$ chia plots create -k 32 -b 5120 -u 128 -r 1 -n 1 -t /media/newport/temp/ -d /media/newport/plots/ -f Farmer_Public_Key -p Pool_Public_Key
-
+(venv) ngd@node1:~/chia-blockchain$ chia init -c ~/.chia/mainnet/config/ssl/catmp
 ```
+e- Launch the harvester by running CLI ``` chia start harvester -r ``` and you should see a new connection on the host machine in your INFO level logs.
+```
+(venv) ngd@node1:~/chia-blockchain$ chia start harvester -r
+```
+
+
+
+
+
+
+
+
