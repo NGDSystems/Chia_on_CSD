@@ -38,20 +38,28 @@ In the above scenario, we assumed that Full and Farmer nodes are working on the 
 
 a- Make a copy of the host server CA directory into the same path in CSDs.
 ```
-scp  -r ~/.chia/mainnet/config/ssl/ca ngd@10.1.1.2:~/.chia/mainnet/config/ssl/catmp
+(venv) ngd@Host:~/chia-blockchain$ scp  -r ~/.chia/mainnet/config/ssl/ca ngd@10.1.1.2:~/.chia/mainnet/config/ssl/catmp
 ```
 
 b- Make sure the host server IP address on port 8447 is accessible by CSDs harvester machines.
 ```
-sudo ufw allow from 10.1.1.2
+(venv) ngd@Host:~/chia-blockchain$ sudo ufw allow from 10.1.1.2
 ```
 
 c- See the list of remote harvesters after some minutes. 
 ```
-chia farm summary
+(venv) ngd@Host:~/chia-blockchain$ chia farm summary
 ```
 
 ### The steps we need to run on the CSDs are as follows.
+a- Fix the plots directories by using "chia plots show", "chia plots add -d [dir]"   and "chia plots remove -d [dir]" commands.
+```
+(venv) ngd@node1:~/chia-blockchain$ chia plots show
+```
+
+b- Open the ~/.chia/mainnet/config/config.yaml file in each CSD harvester, and enter the host IP address in the remote harvester's farmer_peer section (NOT full_node). 
+For example, this section would look like this:
+
 
 ```
 ngd@node1:~$ cd chia-blockchain
