@@ -27,7 +27,12 @@ ngd@node1:~/chia-blockchain$ . ./activate
 
 ```
 ## 3- Using CSDs as a Chia Harvester
+
+Here is the senario as under: 
+
 ![image](https://user-images.githubusercontent.com/31414094/152073443-c90b9353-3d1b-41d4-80eb-de39f3186357.png)
+
+In the above scenario, we assumed that Full and Farmer nodes are working on the Host, and CSDs are harvesting on their local plots.
 
 
 ```
