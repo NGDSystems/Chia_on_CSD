@@ -58,7 +58,23 @@ a- Fix the plots directories by using "chia plots show", "chia plots add -d [dir
 ```
 
 b- Open the ~/.chia/mainnet/config/config.yaml file in each CSD harvester, and enter the host IP address in the remote harvester's farmer_peer section (NOT full_node). 
+
+```
+(venv) ngd@node1:~/chia-blockchain$ vim ~/.chia/mainnet/config/config.yaml
+```
 For example, this section would look like this:
+```
+harvester:
+  chia_ssl_ca:
+    crt: config/ssl/ca/chia_ca.crt
+    key: config/ssl/ca/chia_ca.key
+  farmer_peer:
+    host: 10.1.1.1
+    port: 8447
+```
+
+
+
 
 
 ```
