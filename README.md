@@ -30,7 +30,7 @@ ngd@node1:~/chia-blockchain$ . ./activate
 
 Here is the senario as under: 
 
-![image](https://user-images.githubusercontent.com/31414094/152073443-c90b9353-3d1b-41d4-80eb-de39f3186357.png)
+![image](https://user-images.githubusercontent.com/31414094/152264115-0670ecb8-f435-40fd-9ab4-a92d8d7edf53.png)
 
 In the above scenario, we assumed that Full and Farmer nodes are working on the Host, and CSDs are harvesting on their local plots. The architecture comprises one host server that runs the farmer, full node, and wallet and CSDs that run only the harvester. Only the host server will connect to the Chia network.
 
