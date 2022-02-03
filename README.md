@@ -1,6 +1,6 @@
 # Chia_on_CSD
 
-## 1- Install instructions for Ubuntu/Debian
+## 1- Install instructions for Ubuntu/Debian on CSD
 
 ```
 ngd@node1:~$ sudo apt-get update
@@ -84,7 +84,7 @@ e- Launch the harvester by running CLI ``` chia start harvester -r ``` and you s
 (venv) ngd@node1:~/chia-blockchain$ chia start harvester -r
 ```
 
-
+## 4- Using NGD SSD as a Chia plotter
 
 
 
