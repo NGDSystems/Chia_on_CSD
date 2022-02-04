@@ -90,7 +90,8 @@ Here is the scenario as follows:
 
 ![image](https://user-images.githubusercontent.com/31414094/152451005-d401d788-9199-4be5-afb3-2ccf4ad55524.png)
 
-a- Running multiple plotters parallel on different terminal tabs on a single NGD SSD drive ([ngd_chia_plotter.sh](./ngd_chia_plotter.sh)).   
+a- Running multiple plotters parallel on different terminal tabs for different NGD-SSD drives. ([ngd_chia_plotter.sh](./ngd_chia_plotter.sh)). 
+b- Moving gnrated plots form ploter server to farmer server. ([ngd_chia_mv plots.sh](./ngd_chia_mv plots.sh)) 
 
 
 
