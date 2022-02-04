@@ -16,5 +16,5 @@ EOF
 sudo mkfs.ext4 "/dev/nvme"$i"n1p1";
 done
 else
-  echo "Please use './1-par.sh [m] [n]' # m for first nvme drive and n for last nvme drive. Example: './1-par.sh 0 2'"; 
+  echo "Please use './ngd_partition.sh [m] [n]' # m for first nvme drive and n for last nvme drive. Example: './ngd_partition.sh 0 2'"; 
 fi
