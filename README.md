@@ -84,8 +84,11 @@ e- Launch the harvester by running CLI ``` chia start harvester -r ``` and you s
 (venv) ngd@node1:~/chia-blockchain$ chia start harvester -r
 ```
 
-## 4- Using NGD SSD as a Chia plotter
+## 4- Using NGD SSD to make plotting faster
 
+![image](https://user-images.githubusercontent.com/31414094/152450934-e5828cef-632f-4fa3-b482-c0068f65d2fb.png)
+
+a- Running multiple plotters parallel on different terminal tabs on a single NGD SSD drive (ngd_chia_plotter.sh).   
 
 
 
