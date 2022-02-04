@@ -94,7 +94,7 @@ a- Running multiple plotters parallel on different terminal tabs for different N
 
 b- Moving gnrated plots form ploter server to farmer server. ([ngd_chia_mv_plots.sh](./ngd_chia_mv_plots.sh)) 
 
-
+c- Partition multiple NGD-SSD drives. ([ngd_partition.sh](./ngd_partition.sh)).
 
 
 
