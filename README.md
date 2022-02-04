@@ -96,5 +96,6 @@ b- Moving gnrated plots form ploter server to farmer server. ([ngd_chia_mv_plots
 
 c- Partition multiple NGD-SSD drives. ([ngd_partition.sh](./ngd_partition.sh)).
 
+d- Kill a chia plotter task ([kill_plotter.sh](kill_plotter.sh)).
 
 
