@@ -90,12 +90,13 @@ Here is the scenario as follows:
 
 ![image](https://user-images.githubusercontent.com/31414094/152451005-d401d788-9199-4be5-afb3-2ccf4ad55524.png)
 
-a- Running multiple plotters parallel on different terminal tabs for different NGD-SSD drives. ([ngd_chia_plotter.sh](./ngd_chia_plotter.sh)).
+a- Running multiple plotters parallel on different terminal tabs for different NGD-SSD drives [ngd_chia_plotter.sh](./ngd_chia_plotter.sh).
 
-b- Moving gnrated plots form ploter server to farmer server. ([ngd_chia_mv_plots.sh](./ngd_chia_mv_plots.sh)) 
+b- Moving gnrated plots form ploter server to farmer server [ngd_chia_mv_plots.sh](./ngd_chia_mv_plots.sh). 
 
-c- Partition multiple NGD-SSD drives. ([ngd_partition.sh](./ngd_partition.sh)).
+c- Partition multiple NGD-SSD drives [ngd_partition.sh](./ngd_partition.sh).
 
 d- Kill a chia plotter task [kill_plotter.sh](./kill_plotter_threads.sh).
 
+e- Other commands [ngd_cmds.sh](./ngd_cmds.sh). 
 
