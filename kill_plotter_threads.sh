@@ -11,8 +11,8 @@ if [ $# -eq 3 ]; then
 		#ps aux | grep chia | grep newport_$i/tmp | wc -l;
 		sudo kill $pid;
 		echo $pid;
-        rm -r /mnt/newport_$j/tmp$i
+        	rm -r /mnt/newport_$j/tmp$i
 	done
 else
-  echo "Please use './kill_plots.sh [m] [n]' # m for first nvme drive and n for last nvme drive. Example: './kill_plots.sh 0 2'";
+  echo "Please use './kill_plotter_threads.sh [m] [n]' # m for first nvme drive and n for last nvme drive. Example: './kill_plotter_threads.sh 0 2'";
 fi
